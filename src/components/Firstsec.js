@@ -6,6 +6,7 @@ import {
   faTaxi,
   faPerson,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./Firstsec.css";
@@ -23,12 +24,14 @@ function Firstsec({type}) {
       key: "selection",
     },
   ]);
+  const [destination, setDestination] = useState("");
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
     adult: 1,
     children: 0,
     room: 1,
   });
+  const navigate =useNavigate();
   const handleOption = (name, operation) => {
     setOptions((prev) => {
       return {
@@ -37,6 +40,10 @@ function Firstsec({type}) {
       };
     });
   };
+   const HandleSearch = () =>{
+    navigate('/hotels',{ state: {destination,date,options}})
+
+   }
   return (
     <>
       <div className="firstsec">
@@ -80,6 +87,7 @@ function Firstsec({type}) {
                     type="text"
                     placeholder="Where are you going?"
                     className="headersearchinput"
+                    onChange={(e)=>setDestination(e.target.value)}
                   />
                 </div>
                 <div className="headersearchitem">
@@ -184,7 +192,7 @@ function Firstsec({type}) {
                   )}
                 </div>
                 <div className="headersearchitem">
-                  <button className="headerbtn">Search</button>
+                  <button className="headerbtn" onClick={HandleSearch}>Search</button>
                 </div>
               </div>
             </>
