@@ -109,7 +109,7 @@ function Firstsec({type}) {
                       moveRangeOnFirstSelection={false}
                       months={2}
                       ranges={date}
-                      direction="horizontal"
+                      minDate={ new Date()}
                       className="date"
                     />
                   )}
