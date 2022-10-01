@@ -115,6 +115,9 @@
     cursor: not-allowed;
 
 }
-@media screen and (max-width:1024px){
-    
+@media screen and (max-width:500px){
+    /* .firstsec{
+        display: flex;
+        flex-direction: column;
+    } */
 }

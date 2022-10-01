@@ -149,3 +149,11 @@
     color: lightgray;
     cursor: pointer;
   }
+  @media screen and (max-width:500px){
+    .slider{
+      display: grid;
+      background-color: black;
+      color: #008009;
+    }
+    
+  }
