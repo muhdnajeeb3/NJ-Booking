@@ -47,7 +47,7 @@ function Footer() {
         
 
         </div>
-        <div className="fText">Copyright © 2022 Lamabooking.</div>
+        <div className="fText">Copyright © 2022 NJBooking.</div>
     
     </div>
   )

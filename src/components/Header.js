@@ -9,7 +9,7 @@ function Header() {
     <>
     <Navbar expand='lg' className='navbar' >
         <Container>
-        <Navbar.Brand href='/' className='navbarContainer'>Booking
+        <Navbar.Brand href='/' className='navbarContainer'> NJ Booking
 
         </Navbar.Brand>
         <div className="navitems">

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Maillist.css'
 
 function Maillist() {
@@ -10,6 +11,7 @@ function Maillist() {
             <input type="text" placeholder='Your Email' />
             <button>Subscribe</button>
         </div>
+        
     </div>
   )
 }
